@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
     //console.log(Number(search_params.get("x"))+"hello")
     if(storeValue == 0)
     storeValue=Math.random()
-    res.write('Math.atan2 applied to '+storeValue+" is "+Math.atan2(storeValue)+"\n");
     res.write('Math.atanh applied to '+storeValue+" is "+Math.atanh(storeValue)+"\n");
     res.end('Math.cbrt applied to '+storeValue+" is "+Math.cbrt(storeValue));
  });
